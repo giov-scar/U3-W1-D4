@@ -39,7 +39,7 @@ fetch (url)
     data.forEach((el:any, i:number) => {
         let oneItem = new Item(el.id,el.codprod, el.collezione,el.capo,el.modello,el.quantita,el.colore,el.prezzoivaesclusa,el.prezzoivainclusa,el.disponibile,el.saldo)
         clothes.push(oneItem)
-        console.log(clothes[i].getacquistocapo());
+        console.log( 'Il prezzo è', clothes[i].getacquistocapo(), '€ per', clothes[i].capo);
         
         
     })});
