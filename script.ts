@@ -28,7 +28,7 @@ class Item {
 
 let clothes:Item[] = []
 fetch (url)
-.then((res:any) => {
+.then((res:Response) => {
     if(res.ok) {
         console.log(res);
         return res.json();
@@ -44,4 +44,3 @@ fetch (url)
         
     })});
 
-    console.log(clothes);
